@@ -86,6 +86,7 @@ img {
 }
 .swimi-left {
     width: 39.41513%;
+    position: relative;
 }
 .swimi-left img {
     width: 100%;
@@ -130,6 +131,17 @@ img {
     z-index: 1003;
     width: 1.458333vw;
     cursor: pointer;
+}
+.cwi-logo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.swimil-logo {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: auto!important;
 }
 
 @keyframes arrow {
