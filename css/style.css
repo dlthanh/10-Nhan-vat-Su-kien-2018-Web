@@ -38,6 +38,7 @@ img {
     -webkit-animation: 0.6s arrow infinite alternate;
     -o-animation: 0.6s arrow infinite alternate;
     animation: 0.6s arrow infinite alternate;
+    cursor: pointer;
 }
 .cwim-list {
     display: flex;
