@@ -12,7 +12,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/slimscroll.js"></script>
     <script src="js/swiper.min.js"></script>
-    <script src="js/flip.js"></script>
+    <!--<script src="js/flip.js"></script>-->
     <script>
         $(function() {
             var cafef = new Swiper('.cw-container', {
@@ -50,10 +50,16 @@
                 railOpacity: 1
             });
 
-            $('.cwiml-item').flip({
-                trigger: 'hover',
-                speed: 600
-            })
+            // $('.cwiml-item flip-container').flip({
+            //     trigger: 'hover',
+            //     speed: 600
+            // })
+
+            $('.cwiml-item').hover(function() {
+                $(this).toggleClass('hover');
+            }, function() {
+                $(this).toggleClass('hover');
+            });
 
             $('.cwiml-item').click(function() {
                 $('.cw-popup').fadeIn(600);
@@ -98,93 +104,113 @@
                             <img src="images/frame.png" alt="" class="cwi-img">
 
                             <div class="cwim-list">
-                                <div class="cwiml-item">
-                                    <div class="front">
-                                        <img src="images/front-1.png" alt="" class="cwi-img">
-                                    </div>
-                                    <div class="back">
-                                        <img src="images/back-1.png" alt="" class="cwi-img">
-                                    </div>
-                                </div>
-
-                                <div class="cwiml-item">
-                                    <div class="front">
-                                        <img src="images/front-2.png" alt="" class="cwi-img">
-                                    </div>
-                                    <div class="back">
-                                        <img src="images/back-2.png" alt="" class="cwi-img">
+                                <div class="cwiml-item flip-container flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img src="images/front-1.png" alt="" class="cwi-img">
+                                        </div>
+                                        <div class="back">
+                                            <img src="images/back-1.png" alt="" class="cwi-img">
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="cwiml-item">
-                                    <div class="front">
-                                        <img src="images/front-3.png" alt="" class="cwi-img">
-                                    </div>
-                                    <div class="back">
-                                        <img src="images/back-3.png" alt="" class="cwi-img">
-                                    </div>
-                                </div>
-
-                                <div class="cwiml-item">
-                                    <div class="front">
-                                        <img src="images/front-4.png" alt="" class="cwi-img">
-                                    </div>
-                                    <div class="back">
-                                        <img src="images/back-4.png" alt="" class="cwi-img">
+                                <div class="cwiml-item flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img src="images/front-2.png" alt="" class="cwi-img">
+                                        </div>
+                                        <div class="back">
+                                            <img src="images/back-2.png" alt="" class="cwi-img">
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="cwiml-item">
-                                    <div class="front">
-                                        <img src="images/front-5.png" alt="" class="cwi-img">
-                                    </div>
-                                    <div class="back">
-                                        <img src="images/back-5.png" alt="" class="cwi-img">
-                                    </div>
-                                </div>
-
-                                <div class="cwiml-item">
-                                    <div class="front">
-                                        <img src="images/front-6.png" alt="" class="cwi-img">
-                                    </div>
-                                    <div class="back">
-                                        <img src="images/back-6.png" alt="" class="cwi-img">
+                                <div class="cwiml-item flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img src="images/front-3.png" alt="" class="cwi-img">
+                                        </div>
+                                        <div class="back">
+                                            <img src="images/back-3.png" alt="" class="cwi-img">
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="cwiml-item">
-                                    <div class="front">
-                                        <img src="images/front-7.png" alt="" class="cwi-img">
-                                    </div>
-                                    <div class="back">
-                                        <img src="images/back-7.png" alt="" class="cwi-img">
-                                    </div>
-                                </div>
-
-                                <div class="cwiml-item">
-                                    <div class="front">
-                                        <img src="images/front-8.png" alt="" class="cwi-img">
-                                    </div>
-                                    <div class="back">
-                                        <img src="images/back-8.png" alt="" class="cwi-img">
+                                <div class="cwiml-item flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img src="images/front-4.png" alt="" class="cwi-img">
+                                        </div>
+                                        <div class="back">
+                                            <img src="images/back-4.png" alt="" class="cwi-img">
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="cwiml-item">
-                                    <div class="front">
-                                        <img src="images/front-9.png" alt="" class="cwi-img">
-                                    </div>
-                                    <div class="back">
-                                        <img src="images/back-9.png" alt="" class="cwi-img">
+                                <div class="cwiml-item flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img src="images/front-5.png" alt="" class="cwi-img">
+                                        </div>
+                                        <div class="back">
+                                            <img src="images/back-5.png" alt="" class="cwi-img">
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="cwiml-item">
-                                    <div class="front">
-                                        <img src="images/front-10.png" alt="" class="cwi-img">
+                                <div class="cwiml-item flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img src="images/front-6.png" alt="" class="cwi-img">
+                                        </div>
+                                        <div class="back">
+                                            <img src="images/back-6.png" alt="" class="cwi-img">
+                                        </div>
                                     </div>
-                                    <div class="back">
-                                        <img src="images/back-10.png" alt="" class="cwi-img">
+                                </div>
+
+                                <div class="cwiml-item flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img src="images/front-7.png" alt="" class="cwi-img">
+                                        </div>
+                                        <div class="back">
+                                            <img src="images/back-7.png" alt="" class="cwi-img">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cwiml-item flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img src="images/front-8.png" alt="" class="cwi-img">
+                                        </div>
+                                        <div class="back">
+                                            <img src="images/back-8.png" alt="" class="cwi-img">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cwiml-item flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img src="images/front-9.png" alt="" class="cwi-img">
+                                        </div>
+                                        <div class="back">
+                                            <img src="images/back-9.png" alt="" class="cwi-img">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cwiml-item flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img src="images/front-10.png" alt="" class="cwi-img">
+                                        </div>
+                                        <div class="back">
+                                            <img src="images/back-10.png" alt="" class="cwi-img">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
